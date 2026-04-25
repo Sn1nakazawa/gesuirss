@@ -3,7 +3,7 @@ from feedgen.feed import FeedGenerator
 import os
 from datetime import datetime
 
-BASE_URL = "https://<ユーザー名>.github.io/<リポジトリ名>"
+BASE_URL = "https://Sn1nakazawa.github.io/gesuirss"
 
 # 画像保存先
 os.makedirs("docs/images", exist_ok=True)
