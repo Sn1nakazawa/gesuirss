@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
 import feedparser
-from wordcloud import WordCloud
+from wordcloud import WordCloud, STOPWORDS
 from janome.tokenizer import Tokenizer
 from feedgen.feed import FeedGenerator
 
@@ -29,6 +29,11 @@ for title in titles:
 text = " ".join(words)
 
 # ===== ワードクラウド生成 =====
+
+stopwords = set(STOPWORDS)
+stopwords.update({
+    "下水道","市","Yahoo","city","NEWS","ため","よう","さん","日本","東京"
+})
 filename = datetime.now().strftime("%Y%m%d_%H%M%S") + ".png"
 filepath = f"docs/images/{filename}"
 
@@ -36,6 +41,7 @@ wc = WordCloud(
     width=800,
     height=400,
     background_color="white",
+    stopwords=stopwords,
     font_path=FONT_PATH
 ).generate(text)
 
