@@ -47,4 +47,5 @@ jobs:
           git checkout -- .github/workflows/rss.yml || true
           
           git commit -m "update rss" || echo "no changes"
+          git diff --name-only
           git push
