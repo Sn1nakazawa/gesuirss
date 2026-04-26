@@ -39,7 +39,8 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
           python generate.py
-          git add docs/	  
+          git add docs/
+		  
 		  git restore --staged .github/workflows/rss.yml || true
 		  git checkout -- .github/workflows/rss.yml || true
 		  git commit -m "update rss" || echo "no changes"
