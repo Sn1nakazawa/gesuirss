@@ -8,7 +8,7 @@ from feedgen.feed import FeedGenerator
 # ===== 設定 =====
 RSS_URL = "https://news.yahoo.co.jp/rss/topics/top-picks.xml"
 BASE_URL = "https://Sn1nakazawa.github.io/gesuirss"
-FONT_PATH = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"  # 日本語フォントに変更推奨
+FONT_PATH = "/usr/share/fonts/opentype/ipafont-gothic/ipagp.ttf"
 
 # ===== ディレクトリ作成 =====
 os.makedirs("docs/images", exist_ok=True)
