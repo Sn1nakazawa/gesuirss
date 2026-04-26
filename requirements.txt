@@ -1,2 +1,5 @@
-feedgen
+feedparser
+wordcloud
 pillow
+janome
+feedgen
