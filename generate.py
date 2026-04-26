@@ -6,8 +6,8 @@ from janome.tokenizer import Tokenizer
 from feedgen.feed import FeedGenerator
 
 # ===== 設定 =====
-RSS_URL = "https://news.yahoo.co.jp/rss/topics/top-picks.xml"
-BASE_URL = "https://news.google.com/rss/search?q=下水道&hl=ja&gl=JP&ceid=JP:ja"
+RSS_URL = "https://news.google.com/rss/search?q=下水道&hl=ja&gl=JP&ceid=JP:ja"
+BASE_URL = "https://Sn1nakazawa.github.io/gesuirss"
 FONT_PATH = "/usr/share/fonts/opentype/ipafont-gothic/ipagp.ttf"
 
 # ===== ディレクトリ作成 =====
