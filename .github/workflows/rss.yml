@@ -30,4 +30,4 @@ jobs:
           git commit -m "update rss" || echo "no changes"
 
           git pull --rebase origin main
-          git push origin main
+          git push --force origin main
