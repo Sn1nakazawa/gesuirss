@@ -37,6 +37,7 @@ jobs:
 
           git fetch origin main
           git reset --hard origin/main
+          git checkout -- .github/workflows/rss.yml || true
 
           git add docs/
           git commit -m "update rss" || echo "no changes"
