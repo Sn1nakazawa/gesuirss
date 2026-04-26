@@ -39,10 +39,8 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
           python generate.py
-          git add docs/
-					
-          # workflowを強制的に除外
-					git restore --staged .github/workflows/rss.yml || true
-					git checkout -- .github/workflows/rss.yml || true
-					git commit -m "update rss" || echo "no changes"
-					git push
+          git add docs/	  
+		  git restore --staged .github/workflows/rss.yml || true
+		  git checkout -- .github/workflows/rss.yml || true
+		  git commit -m "update rss" || echo "no changes"
+		  git push
