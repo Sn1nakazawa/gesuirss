@@ -20,6 +20,7 @@ jobs:
 
       - run: pip install -r requirements.txt
       - run: python generate.py
+      - run: sudo apt-get install -y fonts-ipafont
 
       - name: commit & push
         run: |
