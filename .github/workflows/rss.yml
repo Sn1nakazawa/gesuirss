@@ -2,7 +2,11 @@ name: generate rss
 
 on:
   workflow_dispatch:
-
+  
+concurrency:
+  group: rss
+  cancel-in-progress: true
+  
 permissions:
   contents: write
 jobs:
@@ -29,5 +33,5 @@ jobs:
           git add docs/
           git commit -m "update rss" || echo "no changes"
 
-          git pull --rebase origin main
+          # git pull --rebase origin main
           git push --force origin main
