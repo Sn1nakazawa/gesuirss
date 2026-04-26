@@ -32,7 +32,7 @@ text = " ".join(words)
 
 stopwords = set(STOPWORDS)
 stopwords.update({
-    "下水道","市","Yahoo","city","NEWS","ニュース","よう","さん","日本","東京"
+    "下水道","市","Yahoo","city","NEWS","ニュース","よう","さん","lg","jp"
 })
 filename = datetime.now().strftime("%Y%m%d_%H%M%S") + ".png"
 filepath = f"docs/images/{filename}"
