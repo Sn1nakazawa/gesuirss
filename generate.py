@@ -92,3 +92,4 @@ fe.enclosure(img_url, 0, 'image/png')
 fe.description(f'<img src="{img_url}">')
 
 fg.rss_file("docs/rss.xml")
+fe.id(img_url)  # これを追加
